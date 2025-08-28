@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PinkCycle - Period Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stycle.css">
+</head>
+<body>
+  <header>PinkCycle 💖</header>
+  <main>
+    <h2>Track Your Period</h2>
+    
+    <label for="startDate">Last Period Start Date:</label>
+    <input type="date" id="startDate" />
+
+    <label for="cycleLength">Average Cycle Length (days):</label>
+    <input type="number" id="cycleLength" value="28" />
+
+    <label for="periodLength">Average Period Duration (days):</label>
+    <input type="number" id="periodLength" value="5" />
+
+    <button onclick="trackCycle()">Predict 💫</button>
+
+    <div class="results" id="results"></div>
+  </main>
+
+  <script src="style.js"></script>
+</body>
+</html>
